@@ -17,28 +17,32 @@ myApp.get("/", function (req, res) {
 });
 
 myApp.get("/audio", function (req, res) {
-    res.render('index');
+    res.render('audio');
   });
 
 myApp.get("/video", function (req, res) {
- res.render('index');
+ res.render('video');
 });
 
 myApp.get("/ebooks", function (req, res) {
- res.render('index');
+ res.render('ebooks');
 });
 
 myApp.get("/testimonies", function (req, res) {
-    res.render('index');
+    res.render('testimonies');
   });
 
 myApp.get("/calendar", function (req, res) {
-    res.render('index');
+    res.render('calendar');
 });
     
 myApp.get("/helpline", function (req, res) {
-    res.render('contact');
+    res.render('helpline');
 });  
+
+myApp.get("/contact", function (req, res) {
+  res.render('helpline');
+}); 
 
 myApp.listen(8080);
 console.log("My website is running on the port 8080");
